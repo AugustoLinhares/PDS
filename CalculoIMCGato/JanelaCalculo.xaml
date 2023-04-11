@@ -1,0 +1,17 @@
+﻿<Window x:Class="CalculoIMCGato.JanelaCalculo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CalculoIMCGato"
+        mc:Ignorable="d"
+        Title="Descubra seu IMC!" Height="450" Width="800">
+    <Grid>
+        <Label Content="Digite sua altura" HorizontalAlignment="Left" Margin="199,141,0,0" VerticalAlignment="Top"/>
+        <Label Content="Digite seu peso" HorizontalAlignment="Left" Margin="490,141,0,0" VerticalAlignment="Top"/>
+        <Button Content="Descubra seu IMC!" HorizontalAlignment="Left" Margin="354,239,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Margin="199,185,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Margin="490,185,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+
+    </Grid>
+</Window>

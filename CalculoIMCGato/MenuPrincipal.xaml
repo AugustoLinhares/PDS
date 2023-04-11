@@ -1,0 +1,13 @@
+﻿<Window x:Class="CalculoIMCGato.MenuPrincipal"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CalculoIMCGato"
+        mc:Ignorable="d"
+        Title="Menu" Height="450" Width="800">
+    <Grid>
+        <Label Content="Descubra seu IMC!" Margin="259,121,259,0" Height="60" Width="282" VerticalAlignment="Top" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Times New Roman" FontSize="20"/>
+        <Button Name="btnTelaImc" Content="Prosseguir" HorizontalAlignment="Center" VerticalAlignment="Center" Width="128" Height="30" Click="btnTelaImc_Click"/>
+    </Grid>
+</Window>

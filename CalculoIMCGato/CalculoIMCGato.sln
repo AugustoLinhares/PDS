@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33414.496
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculoIMCGato", "CalculoIMCGato.csproj", "{A3A182EA-B126-4766-B277-6E8B90BDE306}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A3A182EA-B126-4766-B277-6E8B90BDE306}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3A182EA-B126-4766-B277-6E8B90BDE306}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3A182EA-B126-4766-B277-6E8B90BDE306}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3A182EA-B126-4766-B277-6E8B90BDE306}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2AFEC5F8-C38E-4D11-9640-A35F5BA57FA6}
+	EndGlobalSection
+EndGlobal
