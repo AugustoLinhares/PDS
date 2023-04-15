@@ -10,25 +10,18 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace CalculoIMCGato
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Lógica interna para JanelaResultado.xaml
     /// </summary>
-    public partial class MenuPrincipal : Window
+    public partial class JanelaResultado : Window
     {
-        public MenuPrincipal()
+        public JanelaResultado()
         {
             InitializeComponent();
-        }
-
-        private void btnTelaImc_Click(object sender, RoutedEventArgs e)
-        {
-            JanelaResultado janelaCalculo = new JanelaResultado();
-            janelaCalculo.ShowDialog();
         }
     }
 }

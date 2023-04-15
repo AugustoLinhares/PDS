@@ -9,9 +9,9 @@
     <Grid>
         <Label Content="Digite sua altura" HorizontalAlignment="Left" Margin="199,141,0,0" VerticalAlignment="Top"/>
         <Label Content="Digite seu peso" HorizontalAlignment="Left" Margin="490,141,0,0" VerticalAlignment="Top"/>
-        <Button Content="Descubra seu IMC!" HorizontalAlignment="Left" Margin="354,239,0,0" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" Margin="199,185,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Margin="490,185,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <Button  Name="btnIMC" Content="Descubra seu IMC!" HorizontalAlignment="Left" Margin="354,239,0,0" VerticalAlignment="Top" Click="btnIMC_Click"/>
+        <TextBox Name="txtAltura" HorizontalAlignment="Left" Margin="199,185,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="txtPeso" HorizontalAlignment="Left" Margin="490,185,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
 
     </Grid>
 </Window>

@@ -23,5 +23,35 @@ namespace CalculoIMCGato
         {
             InitializeComponent();
         }
+
+        public double imc = 0;
+
+        private void btnIMC_Click(object sender, RoutedEventArgs e)
+        {
+
+            if(!double.TryParse(txtAltura.Text, out var altura))
+            {
+                MessageBox.Show("nao ok");
+            }
+            else
+            {
+                imc = Convert.ToDouble(txtPeso.Text) / (Convert.ToDouble(txtAltura) * Convert.ToDouble(txtAltura));
+
+                if (imc < 18.5)
+                {
+
+                }
+                else if (imc >= 18.5 || imc <= 24.9)
+                {
+
+                }
+                else if (imc >= 24.9)
+                {
+
+                }
+            }
+
+
+        }
     }
 }

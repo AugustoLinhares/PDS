@@ -5,9 +5,34 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CalculoIMCGato"
         mc:Ignorable="d"
-        Title="Menu" Height="450" Width="800">
+        Title="Menu" Height="720" Width="1280"
+        Background="#F1D5D5"
+        >
+
     <Grid>
-        <Label Content="Descubra seu IMC!" Margin="259,121,259,0" Height="60" Width="282" VerticalAlignment="Top" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Times New Roman" FontSize="20"/>
-        <Button Name="btnTelaImc" Content="Prosseguir" HorizontalAlignment="Center" VerticalAlignment="Center" Width="128" Height="30" Click="btnTelaImc_Click"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Image Stretch="Fill" Width="Auto" Height="Auto" MinWidth="1280" MinHeight="720" Source="/Imagens/fundo_fogo.png" Grid.ColumnSpan="3"/>
+
+        <StackPanel Grid.Column="0" Margin="0,0,-100,0" VerticalAlignment="Bottom" HorizontalAlignment="Left">
+            <Image Width="480" Height="Auto" MinWidth="480" MinHeight="480" Source="/Imagens/gato_ciza.png" Margin="-3,0,0,0"/>
+        </StackPanel>
+
+        <StackPanel Grid.Column="1" HorizontalAlignment="Center">
+            <TextBlock Text="Calculadora de IMC" FontFamily="Lacquer"/>
+        </StackPanel>
+
+        <StackPanel Grid.Column="2" Margin="-100,0,0,0" VerticalAlignment="Bottom" HorizontalAlignment="Left">
+            <Image Width="Auto" Height="Auto" MinWidth="690" MinHeight="600" Source="/Imagens/gato_malhado.png" Margin="-160,0,-20,-70"/>
+        </StackPanel>
+
     </Grid>
 </Window>

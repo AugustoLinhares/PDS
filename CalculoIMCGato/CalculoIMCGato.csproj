@@ -7,4 +7,20 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Imagens\fundo_fogo.png" />
+    <None Remove="Imagens\gato_ciza.png" />
+    <None Remove="Imagens\gato_malhado.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Imagens\fundo_fogo.png" />
+    <Resource Include="Imagens\gato_ciza.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Imagens\gato_malhado.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
 </Project>

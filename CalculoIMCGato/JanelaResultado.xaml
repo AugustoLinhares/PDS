@@ -1,0 +1,39 @@
+﻿<Window x:Class="CalculoIMCGato.JanelaResultado"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CalculoIMCGato"
+        mc:Ignorable="d"
+        Title="JanelaResultado" Height="450" Width="800"
+        Background="#F1D5D5"
+        >
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+
+
+        <StackPanel Grid.Column="0" VerticalAlignment="Bottom" HorizontalAlignment="Left">
+            <Image Source="/Imagens/gato_ciza.png" Width="250" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="0,0,0,0"/>
+        </StackPanel>
+
+        <StackPanel Grid.Column="0">
+            <TextBlock FontSize="30" Text="Teste"/>
+        </StackPanel>
+
+        <StackPanel Grid.Column="1">
+            <TextBlock FontSize="30" Text="Teste"/>
+        </StackPanel>
+        
+        <StackPanel Grid.Column="1">
+            <TextBlock FontSize="30" Text="Teste"/>
+        </StackPanel>
+
+
+        
+    </Grid>
+</Window>
