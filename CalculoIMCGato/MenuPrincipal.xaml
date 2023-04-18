@@ -16,22 +16,19 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
-        <Grid.RowDefinitions>
-            <RowDefinition Height="*"/>
-        </Grid.RowDefinitions>
-
         <Image Stretch="Fill" Width="Auto" Height="Auto" MinWidth="1280" MinHeight="720" Source="/Imagens/fundo_fogo.png" Grid.ColumnSpan="3"/>
 
         <StackPanel Grid.Column="0" Margin="0,0,-100,0" VerticalAlignment="Bottom" HorizontalAlignment="Left">
             <Image Width="480" Height="Auto" MinWidth="480" MinHeight="480" Source="/Imagens/gato_ciza.png" Margin="-3,0,0,0"/>
         </StackPanel>
 
-        <StackPanel Grid.Column="1" HorizontalAlignment="Center">
-            <TextBlock Text="Calculadora de IMC" FontFamily="Lacquer"/>
+        <StackPanel Grid.Column="1" HorizontalAlignment="Center" Margin="-100, 0, -100, -100">
+            <TextBlock Text="Calculadora de IMC" Foreground="#CB0000" FontFamily="Lacquer" Margin="0, 80, 0, 0" FontSize="70"/>
+            <Button x:Name="btnJanelaCalc" Content="Clique aqui" Background="#CB0000" Foreground="#FFFFFF" FontSize="30" Height="70" Width="205" Margin="0, 30, 0, 0" Click="btnJanelaCalc_Click"/>
         </StackPanel>
 
         <StackPanel Grid.Column="2" Margin="-100,0,0,0" VerticalAlignment="Bottom" HorizontalAlignment="Left">
-            <Image Width="Auto" Height="Auto" MinWidth="690" MinHeight="600" Source="/Imagens/gato_malhado.png" Margin="-160,0,-20,-70"/>
+            <Image Width="Auto" Height="Auto" MinWidth="690" MinHeight="600" Source="/Imagens/gato_malhado.png" Margin="-160,0,10,-70"/>
         </StackPanel>
 
     </Grid>

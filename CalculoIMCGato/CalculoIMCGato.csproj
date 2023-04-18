@@ -8,19 +8,45 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Imagens\bests_update.png" />
+    <None Remove="Imagens\capivara_bombada.png" />
+    <None Remove="Imagens\capivara_violao.png" />
+    <None Remove="Imagens\degrade.png" />
     <None Remove="Imagens\fundo_fogo.png" />
     <None Remove="Imagens\gato_ciza.png" />
+    <None Remove="Imagens\gato_folgado.png" />
+    <None Remove="Imagens\gato_gordo.png" />
     <None Remove="Imagens\gato_malhado.png" />
+    <None Remove="Imagens\gato_todo_lapeado.png" />
+    <None Remove="Imagens\troco_rosa.png" />
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Imagens\bests_update.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Imagens\capivara_bombada.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Imagens\capivara_violao.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Imagens\degrade.png" />
     <Resource Include="Imagens\fundo_fogo.png" />
     <Resource Include="Imagens\gato_ciza.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Imagens\gato_folgado.png" />
+    <Resource Include="Imagens\gato_gordo.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Imagens\gato_malhado.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Imagens\gato_todo_lapeado.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Imagens\troco_rosa.png" />
   </ItemGroup>
 
 </Project>

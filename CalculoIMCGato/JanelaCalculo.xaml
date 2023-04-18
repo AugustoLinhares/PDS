@@ -5,13 +5,34 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CalculoIMCGato"
         mc:Ignorable="d"
-        Title="Descubra seu IMC!" Height="450" Width="800">
+        Title="Descubra seu IMC!" Height="720" Width="1280"
+        Background="#F1D5D5">
     <Grid>
-        <Label Content="Digite sua altura" HorizontalAlignment="Left" Margin="199,141,0,0" VerticalAlignment="Top"/>
-        <Label Content="Digite seu peso" HorizontalAlignment="Left" Margin="490,141,0,0" VerticalAlignment="Top"/>
-        <Button  Name="btnIMC" Content="Descubra seu IMC!" HorizontalAlignment="Left" Margin="354,239,0,0" VerticalAlignment="Top" Click="btnIMC_Click"/>
-        <TextBox Name="txtAltura" HorizontalAlignment="Left" Margin="199,185,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox Name="txtPeso" HorizontalAlignment="Left" Margin="490,185,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Column="1" HorizontalAlignment="Center" Margin="-100, 0, -100, -100">
+            <TextBlock Text="Calculadora de IMC" Foreground="#CB0000" FontFamily="Lacquer" Margin="0, 40, 0, 0" FontSize="70"/>
+            
+            <DockPanel HorizontalAlignment="Center" Width="554" Margin="10,50,10,40">
+                <TextBlock  VerticalAlignment="Center" Text="Peso (kg):" FontSize="30" Foreground="#CB0000" HorizontalAlignment="Left"/>
+                <TextBox  VerticalAlignment="Center" Name="txtPeso" FontSize="30" MinWidth="450" Width= "auto" MinHeight="30"  Height="auto" Margin="20,10,10,10"/>
+            </DockPanel>
+
+            <DockPanel HorizontalAlignment="Center" Width="554">
+                <TextBlock VerticalAlignment="Center" Text="Altura (m):" FontSize="30" Foreground="#CB0000" HorizontalAlignment="Left"/>
+                <TextBox VerticalAlignment="Center" Name="txtAltura" FontSize="30" MinWidth="450" Width= "auto" MinHeight="30"  Height="auto" Margin="10,10,10,10"/>
+            </DockPanel>
+
+            <Button x:Name="btnJanelaCalc" Content="Clique aqui" Background="#CB0000" Foreground="#FFFFFF" FontSize="30" Height="70" Width="205" Margin="0, 50, 0, 0" Click="btnJanelaCalc_Click"/>
+        </StackPanel>
+
+        <StackPanel Grid.Column="0">
+            
+        </StackPanel>
 
     </Grid>
 </Window>

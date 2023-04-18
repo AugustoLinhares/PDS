@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
+
 namespace CalculoIMCGato
 {
     /// <summary>
@@ -24,34 +25,45 @@ namespace CalculoIMCGato
             InitializeComponent();
         }
 
-        public double imc = 0;
+        public static double imc = 0;
 
-        private void btnIMC_Click(object sender, RoutedEventArgs e)
+        private void btnJanelaCalc_Click(object sender, RoutedEventArgs e)
         {
-
-            if(!double.TryParse(txtAltura.Text, out var altura))
+            if (!double.TryParse(txtAltura.Text, out var altura) || !double.TryParse(txtPeso.Text, out var peso))
             {
                 MessageBox.Show("nao ok");
             }
             else
             {
-                imc = Convert.ToDouble(txtPeso.Text) / (Convert.ToDouble(txtAltura) * Convert.ToDouble(txtAltura));
+                imc = Convert.ToDouble(txtPeso.Text) / (Convert.ToDouble(txtAltura.Text) * Convert.ToDouble(txtAltura.Text));
+                JanelaResultado janelaResultado = new JanelaResultado();
+                janelaResultado.ShowDialog();
+            }
+        }
 
-                if (imc < 18.5)
-                {
+        public double ValorIMC()
+        {
+            return imc;
+        }
 
-                }
-                else if (imc >= 18.5 || imc <= 24.9)
-                {
+        public static string Retorno()
+        {
+            string tipoIMC = "";
 
-                }
-                else if (imc >= 24.9)
-                {
-
-                }
+            if (imc < 18.5)
+            {
+                tipoIMC = "abaixo";
+            }
+            else if (imc >= 18.5 && imc <= 24.9)
+            {
+                tipoIMC = "ideal";
+            }
+            else if (imc >= 24.9)
+            {
+                tipoIMC = "acima";
             }
 
-
+            return tipoIMC;
         }
     }
 }

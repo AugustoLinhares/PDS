@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CalculoIMCGato"
         mc:Ignorable="d"
-        Title="JanelaResultado" Height="450" Width="800"
+        Title="Resultado!" Height="720" Width="1000"
         Background="#F1D5D5"
         >
     <Grid>
@@ -15,25 +15,13 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
-
-
-        <StackPanel Grid.Column="0" VerticalAlignment="Bottom" HorizontalAlignment="Left">
-            <Image Source="/Imagens/gato_ciza.png" Width="250" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="0,0,0,0"/>
-        </StackPanel>
-
-        <StackPanel Grid.Column="0">
-            <TextBlock FontSize="30" Text="Teste"/>
-        </StackPanel>
-
-        <StackPanel Grid.Column="1">
-            <TextBlock FontSize="30" Text="Teste"/>
-        </StackPanel>
+        <Image Stretch="Uniform" Width="Auto" Height="Auto" MinWidth="1280" MinHeight="800" Source="/Imagens/troco_rosa.png" Grid.ColumnSpan="3" Margin="30,-50,0,0"/>
         
-        <StackPanel Grid.Column="1">
-            <TextBlock FontSize="30" Text="Teste"/>
+        <StackPanel Grid.Column="1" HorizontalAlignment="Center" Margin="-200,20,-200,0">
+            <TextBlock HorizontalAlignment="Center" FontSize="50" Name="txtResultado" Text="Você está "/>
+            <TextBlock HorizontalAlignment="Center" FontSize="25" Name="txtIMC" Text="(seu IMC é "/>
+            <Image x:Name="imgGato" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         </StackPanel>
-
-
         
     </Grid>
 </Window>

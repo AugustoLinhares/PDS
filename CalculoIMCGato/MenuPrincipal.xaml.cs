@@ -25,10 +25,10 @@ namespace CalculoIMCGato
             InitializeComponent();
         }
 
-        private void btnTelaImc_Click(object sender, RoutedEventArgs e)
+        public void btnJanelaCalc_Click(object sender, RoutedEventArgs e)
         {
-            JanelaResultado janelaCalculo = new JanelaResultado();
-            janelaCalculo.ShowDialog();
+            JanelaCalculo jan = new JanelaCalculo();
+            jan.ShowDialog();
         }
     }
 }
